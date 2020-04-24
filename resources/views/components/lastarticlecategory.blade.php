@@ -10,8 +10,8 @@
                 <a href="{{$article->path()}}" class="alink">
                   <img src="{{$article->imagepath()}}" width="100%" height="90px" alt="">
                 </a>
-                  <span data-id="{{$article->id}}" class="btn btn-primary btn-sm saved brdrd shadow-sm"><i class="fas fa-save"></i></span>
-              </div>
+                <span data-id="{{$article->id}}" class="btn {{in_array($article->id,content())?'btn-danger':'btn-primary'}} btn-sm saved brdrd shadow-sm"><i class="fas fa-save"></i></span>
+            </div>
               <div class="col-8">
                 <a href="{{$article->path()}}" class="alink">
                   {{$article->title}}
