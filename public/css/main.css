@@ -1035,6 +1035,10 @@ color: rgb(0, 0, 0);
 {
     display: none;
 }
+.md-show
+{
+    display:block;
+}
 .card-img-top
 {
   height: 225px;
@@ -1045,6 +1049,10 @@ color: rgb(0, 0, 0);
     {
      display: block;
     }
+    .md-show
+   {
+    display:none;
+   }
     .card-img-top
     {
         height: 100px;
@@ -1055,4 +1063,14 @@ color: rgb(0, 0, 0);
         height: 100px;
         max-height: 100px;
     }
+  }
+  .content {
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.582); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    padding: 20px; /* Some padding */
+    right: 15px;
+    left: 15px;
   }
