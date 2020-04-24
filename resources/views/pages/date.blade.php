@@ -26,7 +26,7 @@
                 <a href="{{$article->path()}}" class="alink">
                    <img class="card-img-top" src="{{$article->imagepath()}}" alt="">
                 </a>
-                 <span data-id="{{$article->id}}" class="btn btn-primary btn-sm saved brdrd shadow-sm"><i class="fas fa-save"></i></span>
+                <span data-id="{{$article->id}}" class="btn {{in_array($article->id,content())?'btn-danger':'btn-primary'}} btn-sm saved brdrd shadow-sm"><i class="fas fa-save"></i></span>
             </div>
             <div class="col-md-12 col-8">
                 <a href="{{$article->path()}}" class="alink">
